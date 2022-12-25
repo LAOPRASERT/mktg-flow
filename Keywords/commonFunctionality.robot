@@ -2,6 +2,7 @@
 Library    Selenium2Library
 Library    Debugger
 Variables  ../Resources/env/dev/config.yml
+Variables  ../Resources/page/login.yml
 
 
 *** Keywords ***

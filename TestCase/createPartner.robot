@@ -13,4 +13,5 @@ Create Partner
     LaunchBrowser
     LogInToSeeDooh
     SelectPartner&Contract
+    CreateNewPartner
     LogOutandCloseBrowser
