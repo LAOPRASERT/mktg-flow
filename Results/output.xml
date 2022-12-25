@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.11.1 on darwin)" generated="20221225 16:07:36.730" rpa="false" schemaversion="3">
+<suite id="s1" name="MktgSelectMenu" source="/Users/thkrlao/PycharmProjects/MKTGFLOW/TestCase/MktgSelectMenu.robot">
+<test id="s1-t1" name="Testing Select Menu Tab of MKTG FLOW" line="11">
+<kw name="LaunchBrowser" library="CommonFunctionality">
+<arg>${URL}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${appURL}</arg>
+<arg>${appbrowser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221225 16:07:36.886" level="INFO">Opening browser 'chrome' to base url 'https://develop.mktgflow.seedooh.com/scheduling'.</msg>
+<status status="PASS" starttime="20221225 16:07:36.885" endtime="20221225 16:07:39.478"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221225 16:07:39.478" endtime="20221225 16:07:39.889"/>
+</kw>
+<kw name="Get Title" library="Selenium2Library">
+<var>${pgtitle}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20221225 16:07:39.892" level="INFO">${pgtitle} = MKTG FLOW</msg>
+<status status="PASS" starttime="20221225 16:07:39.890" endtime="20221225 16:07:39.892"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${pgtitle}</arg>
+<arg>WARN</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221225 16:07:39.893" level="WARN">MKTG FLOW</msg>
+<status status="PASS" starttime="20221225 16:07:39.892" endtime="20221225 16:07:39.893"/>
+</kw>
+<status status="PASS" starttime="20221225 16:07:36.885" endtime="20221225 16:07:39.893"/>
+</kw>
+<kw name="LogInSeeDooh" library="CommonFunctionality">
+<kw name="Input Text" library="Selenium2Library">
+<arg>//*[@class="ant-input ant-input-lg sc-bqyKva hNarmA"]</arg>
+<arg>${eMailAddress}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221225 16:07:39.894" level="INFO">Typing text 'superadmin@seedooh.com' into text field '//*[@class="ant-input ant-input-lg sc-bqyKva hNarmA"]'.</msg>
+<status status="PASS" starttime="20221225 16:07:39.893" endtime="20221225 16:07:40.002"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>//*[@class="ant-input ant-input-lg sc-bqyKva hPSqkw"]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221225 16:07:40.003" level="INFO">Typing text 'seedooh13' into text field '//*[@class="ant-input ant-input-lg sc-bqyKva hPSqkw"]'.</msg>
+<status status="PASS" starttime="20221225 16:07:40.002" endtime="20221225 16:07:40.043"/>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<arg>//*[@class="sc-jrAGrp buyyCm"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221225 16:07:40.043" level="INFO">Clicking button '//*[@class="sc-jrAGrp buyyCm"]'.</msg>
+<status status="PASS" starttime="20221225 16:07:40.043" endtime="20221225 16:07:40.070"/>
+</kw>
+<status status="PASS" starttime="20221225 16:07:39.893" endtime="20221225 16:07:40.071"/>
+</kw>
+<kw name="CreateNewPartner" library="CreatePartner">
+<kw name="SelectPartner&amp;Contract" library="SelectMenu">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>//*[@href="/partners"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221225 16:07:40.071" endtime="20221225 16:07:41.588"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>//*[@href="/partners"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221225 16:07:41.589" level="INFO">Clicking element '//*[@href="/partners"]'.</msg>
+<status status="PASS" starttime="20221225 16:07:41.588" endtime="20221225 16:07:41.609"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221225 16:07:43.612" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221225 16:07:41.609" endtime="20221225 16:07:43.612"/>
+</kw>
+<status status="PASS" starttime="20221225 16:07:40.071" endtime="20221225 16:07:43.613"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221225 16:07:46.615" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221225 16:07:43.613" endtime="20221225 16:07:46.615"/>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<arg>//*[@class="sc-jrAGrp bONvcW"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221225 16:07:46.618" level="INFO">Clicking button '//*[@class="sc-jrAGrp bONvcW"]'.</msg>
+<status status="PASS" starttime="20221225 16:07:46.616" endtime="20221225 16:07:46.709"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>//*[@id="rc_select_0"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221225 16:07:46.709" endtime="20221225 16:07:46.935"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${PARTNER_NAME}</arg>
+<arg>${partnerName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221225 16:07:46.936" level="INFO">Typing text 'TrueMove' into text field 'TrueMove'.</msg>
+<msg timestamp="20221225 16:07:47.172" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-16.png"&gt;&lt;img src="selenium-screenshot-16.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221225 16:07:47.172" level="FAIL">Element with locator 'TrueMove' not found.</msg>
+<status status="FAIL" starttime="20221225 16:07:46.935" endtime="20221225 16:07:47.174"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${CATEGORY}</arg>
+<arg>${category}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221225 16:08:06.908" endtime="20221225 16:08:06.908"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${CONTACT_NAME}</arg>
+<arg>${contactName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221225 16:08:06.908" endtime="20221225 16:08:06.908"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${CONTACT_ROLE}</arg>
+<arg>${contactRole}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221225 16:08:06.908" endtime="20221225 16:08:06.908"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${EMAIL}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221225 16:08:06.908" endtime="20221225 16:08:06.908"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${AGENCY}</arg>
+<arg>${agency}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221225 16:08:06.908" endtime="20221225 16:08:06.908"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${ADDRESS}</arg>
+<arg>${address}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221225 16:08:06.908" endtime="20221225 16:08:06.908"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${BILLING_ENTITY}</arg>
+<arg>${billingEntity}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221225 16:08:06.908" endtime="20221225 16:08:06.908"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221225 16:08:06.908" endtime="20221225 16:08:06.908"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>//*[@class="sc-jSgupP ksJFgj"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221225 16:08:06.908" endtime="20221225 16:08:06.908"/>
+</kw>
+<kw name="Debug" library="Debugger">
+<status status="NOT RUN" starttime="20221225 16:08:06.908" endtime="20221225 16:08:08.290"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221225 16:08:08.290" endtime="20221225 16:08:08.290"/>
+</kw>
+<status status="FAIL" starttime="20221225 16:07:40.071" endtime="20221225 16:08:08.290"/>
+</kw>
+<kw name="LogOutandCloseBrowser" library="CommonFunctionality">
+<status status="NOT RUN" starttime="20221225 16:08:08.290" endtime="20221225 16:08:08.290"/>
+</kw>
+<doc>Launching the browser</doc>
+<status status="FAIL" starttime="20221225 16:07:36.885" endtime="20221225 16:08:08.290">Element with locator 'TrueMove' not found.</status>
+</test>
+<status status="FAIL" starttime="20221225 16:07:36.731" endtime="20221225 16:08:08.291"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="MktgSelectMenu">MktgSelectMenu</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20221225 16:07:39.893" level="WARN">MKTG FLOW</msg>
+</errors>
+</robot>
