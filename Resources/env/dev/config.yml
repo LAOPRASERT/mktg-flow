@@ -1,7 +1,11 @@
 URL:   https://develop.mktgflow.seedooh.com/scheduling
-browser:    chrome
-eMailAddress:     superadmin@seedooh.com
-password:     seedooh13
+BROWSER:    chrome
+
+SUPER_ADMIN: {
+          USERNAME: superadmin@seedooh.com,
+          PASSWORD: seedooh13
+  }
+
 partnerName:  TrueMove
 category:  Crypto
 contactName:  Lee Jung ki
@@ -10,3 +14,8 @@ email:  laoprasert.k@gmail.com
 agency:  DA Entertainment
 address:  99/443 The Cabana Condo
 billingEntity:  True Corporation
+
+#database: {
+#            test: eeee
+#            test1: 222
+#}
