@@ -5,7 +5,7 @@ Resource    ../Keywords/SelectMenu.robot
 Resource    ../Keywords/CreatePartner.robot
 Variables   ../Resources/env/dev/config.yml
 
-*** variables ***
+*** Variables ***
 
 *** Test Cases ***
 Create Partner

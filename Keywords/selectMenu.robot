@@ -1,94 +1,114 @@
 *** Settings ***
 Library     Selenium2Library
+Resource    ../Resources/page/Menu.robot
 
 *** Keywords ***
 SelectPartner&Contract
-    Wait Until Element Is Visible   //*[@href="/partners"]
-    Click Element    //*[@href="/partners"]
+    Wait Until Element Is Visible   ${partner&Contract}
+    Click Element    ${partner&Contract}
     Sleep    2s
 
 SelectScheduling
-    Wait Until Element Is Visible   //*[@href="/scheduling"]
-    Click Element    //*[@href="/scheduling"]
+    Wait Until Element Is Visible   ${scheduling}
+    Click Element    ${scheduling}
     Sleep    2s
 
 SelectInventoryManagement
-    Wait Until Element Is Visible   //*[@href="/inventory"]
-    Click Element    //*[@href="/inventory"]
+    Wait Until Element Is Visible   ${inventory}
+    Click Element    ${inventory}
     Sleep    2s
 
 SelectSportTypeManagement
-    Wait Until Element Is Visible   //*[@class="sc-crrsfI exgRiJ svg-fill"]
-    Click Element    //*[@class="sc-crrsfI exgRiJ svg-fill"]
-    Sleep    2s
-    Wait Until Element Is Visible   //*[@id="/administration$Menu"]
-    Click Element    //*[@href="/administration/sport-type"]
+    Wait Until Element Is Visible   ${administration}
+    Click Element    ${administration}
+    Sleep    1s
+    Wait Until Element Is Visible   ${administrationMenu}
+    Click Element    ${sportType}
     Sleep    2s
 
 SelectSportTeamManagement
-    Wait Until Element Is Visible   //*[@class="sc-crrsfI exgRiJ svg-fill"]
-    Wait Until Element Is Visible   //*[@id="/administration$Menu"]
-    Click Element    //*[@href="/administration/sport-team"]
+    Wait Until Element Is Visible   ${administration}
+    Click Element    ${administration}
+    Sleep    1s
+    Wait Until Element Is Visible   ${administrationMenu}
+    Click Element    ${sportTeam}
     Sleep    2s
 
 SelectVenueManagement
-    Wait Until Element Is Visible   //*[@class="sc-crrsfI exgRiJ svg-fill"]
-    Wait Until Element Is Visible   //*[@id="/administration$Menu"]
-    Click Element    //*[@href="/administration/venue"]
+    Wait Until Element Is Visible   ${administration}
+    Click Element    ${administration}
+    Sleep    1s
+    Wait Until Element Is Visible   ${administrationMenu}
+    Click Element    ${vanue}
     Sleep    2s
 
 SelectDisplayTypeManagement
-    Wait Until Element Is Visible   //*[@class="sc-crrsfI exgRiJ svg-fill"]
-    Wait Until Element Is Visible   //*[@id="/administration$Menu"]
-    Click Element    //*[@href="/administration/display-type"]
+    Wait Until Element Is Visible   ${administration}
+    Click Element    ${administration}
+    Sleep    1s
+    Wait Until Element Is Visible   ${administrationMenu}
+    Click Element    ${displayType}
     Sleep    2s
 
 SelectEntitlementTemplates
-    Wait Until Element Is Visible   //*[@class="sc-crrsfI exgRiJ svg-fill"]
-    Wait Until Element Is Visible   //*[@id="/administration$Menu"]
-    Click Element    //*[@href="/administration/entitlement-templates"]
+    Wait Until Element Is Visible   ${administration}
+    Click Element    ${administration}
+    Sleep    1s
+    Wait Until Element Is Visible   ${administrationMenu}
+    Click Element    ${entitlementTemplate}
     Sleep    2s
 
 SelectProduction&NonMediaManagement
-    Wait Until Element Is Visible   //*[@class="sc-crrsfI exgRiJ svg-fill"]
-    Wait Until Element Is Visible   //*[@id="/administration$Menu"]
-    Click Element    //*[@href="/administration/production-and-nonmedia"]
+    Wait Until Element Is Visible   ${administration}
+    Click Element    ${administration}
+    Sleep    1s
+    Wait Until Element Is Visible   ${administrationMenu}
+    Click Element    ${production&Non}
     Sleep    2s
 
 SelectSchedulingRules
-    Wait Until Element Is Visible   //*[text()="Settings"]
-    Click Element    //*[text()="Settings"]
-    Sleep    2s
-    Wait Until Element Is Visible   //*[@id="/settings$Menu"]
-    Click Element    //*[@href="/settings/scheduling"]
+    Wait Until Element Is Visible   ${settings}
+    Click Element    ${settings}
+    Sleep    1s
+    Wait Until Element Is Visible   ${settingsMenu}
+    Click Element    ${settingsScheduling}
     Sleep    2s
 
 SelectUserSettings
-    Wait Until Element Is Visible   //*[@id="/settings$Menu"]
-    Click Element    //*[@href="/settings/user"]
+    Wait Until Element Is Visible   ${settings}
+    Click Element    ${settings}
+    Sleep    1s
+    Wait Until Element Is Visible   ${settingsMenu}
+    Click Element    ${settingsUser}
     Sleep    2s
 
 SelectAccountSettings
-    Wait Until Element Is Visible   //*[@id="/settings$Menu"]
-    Click Element    //*[@href="/settings/account"]
+    Wait Until Element Is Visible   ${settings}
+    Click Element    ${settings}
+    Sleep    1s
+    Wait Until Element Is Visible   ${settingsMenu}
+    Click Element    ${settingsAccount}
     Sleep    2s
 
 SelectT&CSettings
-    Wait Until Element Is Visible   //*[@id="/settings$Menu"]
-    Click Element    //*[@href="/settings/terms-and-conditions"]
+    Wait Until Element Is Visible   ${settings}
+    Click Element    ${settings}
+    Sleep    1s
+    Wait Until Element Is Visible   ${settingsMenu}
+    Click Element    ${settingsT&C}
     Sleep    2s
 
-SelectMenu
-    SelectPartner&Contract
-    SelectScheduling
-    SelectInventoryManagement
-    SelectSportTypeManagement
-    SelectSportTeamManagement
-    SelectVenueManagement
-    SelectDisplayTypeManagement
-    SelectEntitlementTemplates
-    SelectProduction&NonMediaManagement
-    SelectSchedulingRules
-    SelectUserSettings
-    SelectAccountSettings
-    SelectT&CSettings
+#SelectMenu
+#    SelectPartner&Contract
+#    SelectScheduling
+#    SelectInventoryManagement
+#    SelectSportTypeManagement
+#    SelectSportTeamManagement
+#    SelectVenueManagement
+#    SelectDisplayTypeManagement
+#    SelectEntitlementTemplates
+#    SelectProduction&NonMediaManagement
+#    SelectSchedulingRules
+#    SelectUserSettings
+#    SelectAccountSettings
+#    SelectT&CSettings

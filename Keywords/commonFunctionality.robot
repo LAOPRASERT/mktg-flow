@@ -1,8 +1,9 @@
 *** Settings ***
 Library    Selenium2Library
 Library    Debugger
+Resource  ../Resources/page/login.robot
 Variables  ../Resources/env/dev/config.yml
-Variables  ../Resources/page/login.yml
+
 
 
 *** Keywords ***
