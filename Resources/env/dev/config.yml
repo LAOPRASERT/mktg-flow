@@ -5,3 +5,8 @@ SUPER_ADMIN: {
           USERNAME: superadmin@seedooh.com,
           PASSWORD: seedooh13
   }
+
+USER: {
+          USERNAME: kritsada@seedooh.com,
+          PASSWORD: Password@2
+}

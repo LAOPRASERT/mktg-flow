@@ -1,8 +1,8 @@
 #Input Data
 data:  {
-        partnerName: TrueMove,
+        partnerName: TrueMove_Automate,
         category: Crypto,
-        contactName: Lee Jung ki,
+        contactName: Lee Jung Ki,
         contactRole: CEO,
         email: laoprasert.k@gmail.com,
         agency: DA Entertainment,
