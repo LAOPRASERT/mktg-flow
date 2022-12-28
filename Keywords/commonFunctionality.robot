@@ -15,15 +15,15 @@ LogOutandCloseBrowser
     Close Browser
 
 user login to the MKTGFLOW system
-    Input Text  ${INPUT_USERNAME_ELEMENT}   ${SUPER_ADMIN.USERNAME}
-    Input Text  ${INPUT_PASSWORD_ELEMENT}  ${SUPER_ADMIN.PASSWORD}
+    Input Text      ${INPUT_USERNAME_ELEMENT}   ${SUPER_ADMIN.USERNAME}
+    Input Text      ${INPUT_PASSWORD_ELEMENT}   ${SUPER_ADMIN.PASSWORD}
     Click Button    ${BUTTON_LOGIN_ELEMENT}
     Sleep    2
 
 User login template
-    [Arguments]     ${username}     ${password}
+    [Arguments]                     ${username}                 ${password}
     browser is opened to login page
-    Input Text  ${INPUT_USERNAME_ELEMENT}   ${username}
-    Input Text  ${INPUT_PASSWORD_ELEMENT}  ${password}
-    Click Button    ${BUTTON_LOGIN_ELEMENT}
+    Input Text                      ${INPUT_USERNAME_ELEMENT}   ${username}
+    Input Text                      ${INPUT_PASSWORD_ELEMENT}   ${password}
+    Click Button                    ${BUTTON_LOGIN_ELEMENT}
     Sleep    2
