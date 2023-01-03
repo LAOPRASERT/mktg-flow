@@ -5,7 +5,7 @@ Variables   ../testdata/createPartner.yml
 *** Variables ***
 
 #Element Delete Partner page
-${PARTNER_NAME_ELEMENT}                 //a[text()="${data.partnerName}" and //td[@class="sc-lcujXC bFEcAy"]]
+${PARTNER_ELEMENT}                      //a[text()="${data.partnerName}" and //td[@class="sc-lcujXC bFEcAy"]]
 ${FILLTER_PARTNER_ELEMENT}              //span[text()="Partner" and //div[@class="sc-jcVebW eVJYVl"]]
 ${SEARCH_ELEMENT}                       //div[@class="search"]
 ${DELETE_ICON_ELEMENT}                  //*[@class="sc-crrsfI dgyVgY ant-dropdown-trigger sc-jNMdTA kFCyzt"]
