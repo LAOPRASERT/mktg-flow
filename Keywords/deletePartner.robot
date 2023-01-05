@@ -1,7 +1,6 @@
 *** Settings ***
 Library     Selenium2Library
 Library     Debugger
-Resource    ../Keywords/CommonFunctionality.robot
 Resource    SelectMenu.robot
 Resource    ../Resources/page/deletePartner.robot
 Variables   ../Resources/testdata/createPartner.yml
@@ -14,6 +13,7 @@ user delete partner
     Press Keys                          ${SEARCH_ELEMENT}    ${data.partnerName}
     Wait Until Element Is Visible       ${PARTNER_ELEMENT}
     Click Element                       ${DELETE_ICON_ELEMENT}
+    Wait Until Element Is Visible       ${DELETE_BUTTON_ELEMENT}
     Click Element                       ${DELETE_BUTTON_ELEMENT}
     Wait Until Element Is Visible       ${CONFIRMATION_ELEMENT}
     Click Element                       ${DELETE_PARTNER_BUTTON_ELEMENT}

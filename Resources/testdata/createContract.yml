@@ -1,0 +1,18 @@
+#Input Data
+contractID:  {
+                AFL: T-01,
+                CRICKET: T-02,
+                VRC: T-03,
+                BASIC: T-04,
+                STANDARD: T-05,
+                TVT: T-06
+}
+
+contractName: {
+                AFL: True-AFL,
+                CRICKET: True-CRICKET,
+                VRC: True-VRC,
+                BASIC: True-BASIC,
+                STANDARD: True-STANDARD,
+                TVT: True-TVT
+}
