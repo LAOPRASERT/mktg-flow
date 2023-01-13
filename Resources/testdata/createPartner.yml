@@ -1,12 +1,13 @@
 #Input Data
 data:  {
-        partnerName: TrueMove_Automate,
-        category: Crypto,
-        contactName: Lee Jung Ki,
-        contactRole: CEO,
-        email: laoprasert.k@gmail.com,
-        agency: DA Entertainment,
-        address: 99/443 The Cabana Condo,
-        billingEntity: True Corporation,
-        owner: Kritsada Laoprasert (superadmin@seedooh.com)
+        partnerName: AutoP_,
+        category: [Crypto,Automotive,Alcohol,Hardware,Soft Drink,Power Tools],
+        contactName: AutoC_,
+        contactRole: [CEO,Manager,Super Admin,Engineer,Senior Engineer,Sale],
+        email: auto@gmail.com,
+        agency: AutoA_,
+        address: Thailand,
+        billingEntity: _Corporation,
+        owner: [Wuttipong Juntes (Sr. Sales Updated),Wuttipong Juntes (Job Title Test),Kritsada Laoprasert (superadmin@seedooh.com),
+                nutchapon hanouypornlert (PowerManBombay),Songkit Phachareon (Software Engineer),nutchapon han (Sale)]
 }

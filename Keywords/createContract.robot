@@ -23,13 +23,7 @@ user add new contract
         Wait Until Element Is Visible       ${ADD_NEW_CONTRACT_ELEMENT}
         Click Element                       ${ADD_NEW_CONTRACT_ELEMENT}
         Wait Until Element Is Visible       ${HEADER_TEXT_ELEMENT}
-        Sleep    1.75
-        Press Keys                          ${INPUT_CONTRACT_ID_ELEMENT}        ${contractID.${SPORT_TYPE}}
-        Click Element                       ${INPUT_CONTRACT_NAME_ELEMENT}
-        Press Keys                          ${INPUT_CONTRACT_NAME_ELEMENT}      ${contractName.${SPORT_TYPE}}
-        Sleep    0.5
-        Click Element                       ${SELECT_FIXTURE_ELEMENT}
-        Sleep    0.5
+        Sleep    1
         Click Element                       ${FIXTURE_NAME_${SPORT_TYPE}_ELEMENT}
         Sleep    0.5
         Click Element                       ${CONFIRM_ADD_NEW_CONTRACT_ELEMENT}

@@ -15,21 +15,33 @@ ${AGENCY_ELEMENT}           //*[@name="partner_contacts[0].agency"]
 ${ADDRESS_ELEMENT}          //*[@name="partner_contacts[0].address"]
 ${BILLING_ENTITY_ELEMENT}   //*[@name="billing_entity"]
 ${OWNER_ELEMENT}            //*[@class="sc-jSgupP ksJFgj"]
-${INPUT_OWNER}              //div[(.="${data.owner}")]
+${INPUT_OWNER}
 ${SUBMIT_BUTTON}            //button[@type ="submit" and //span[.="Submit"]]
 
 #Element Get Text For Check Create New Partner
-${HEADER_TEXT}                  //span[text()="${data.partnerName}"]
-${PARTNER_NAME_TEXT}            //div[text()="${data.partnerName}" and //div[@class="sc-kEjbxe kBeKqb headline-card"]]
-${CLIENT_CONTACT_TEXT}          //span[text()="${data.contactName}*" and //div[@class="ant-select-selector"]]
-${CATEGORY_TEXT}                //div[text()="${data.category}" and //div[@class="sc-jJEJSO DLtwf"]]
-${OWNER_TEXT}                   //div[text()="${data.owner}" and //div[@class="ant-col sc-iqHYGH ctduPu ant-col-xs-24 ant-col-sm-12"]]
-${CONTRACT_TEXT}                //div[(text()="${data.contactName}") and //div[@class="ant-row sc-cxFLnm hVWfuf"]]
-${CONTRACT_ROLE_TEXT}           //div[(text()="${data.contactRole}") and //div[@class="ant-row sc-cxFLnm biUiTa"] ]
-${AGENCY_TEXT}                  //div[(text()="${data.agency}") and //div[@class="ant-row sc-cxFLnm cTGXXb"]]
-${EMAIL_TEXT}                   //div[(text()="${data.email}") and //div[@class="ant-row sc-cxFLnm biUiTa"]]
+${HEADER_TEXT}
+${PARTNER_NAME_TEXT}
+${CLIENT_CONTACT_TEXT}
+${CATEGORY_TEXT}
+${OWNER_TEXT}
+${CONTRACT_TEXT}
+${CONTRACT_ROLE_TEXT}
+${AGENCY_TEXT}
+${EMAIL_TEXT}
 ${BILLING_ENTITY_ELEMENT_TEXT}  //div[@class="sc-jJEJSO izNNUN" and //div[@class="ant-col ant-col-20 sc-iqHYGH ctduPu"]]
+${REQUIRED_FIELD_TEXT}          //div[text()="This field is required"]
 
+${num}
+${timeStamp}
+${partnerName}
+${category}
+${contactName}
+${contactRole}
+${email}
+${agency}
+${address}
+${billingEntity}
+${owner}
 
 
 

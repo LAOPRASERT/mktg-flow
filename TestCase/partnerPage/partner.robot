@@ -14,17 +14,21 @@ Test Teardown   And user go to Home page
 Suite Teardown  And LogOutandCloseBrowser
 
 *** Test Cases ***
-createNewPartner
-    [Documentation]    Create New Partner
-    [Tags]      ADD_PARTNER
-    When user create new partner
+createNewPartnerByNonFillData
+    [Documentation]    Create New Partner By Non Fill Data
+    [Tags]      ADD_PARTNER_NON_DATA
+    When user click add new partner
+    And user click submit button
     Then new partner must create successfully
 
-createNewContract
-    [Documentation]    Create New Contract
-    [Tags]      ADD_CONTRACT
-    When user add new contract
-    Then that contract must create on contract list
+createNewPartnerByFillRequiredData
+createNewPartnerByFillAllData
+    [Documentation]    Create New Partner By Fill All Data
+    [Tags]      ADD_PARTNER_FULL_DATA
+    When user click add new partner
+    And user fill all data
+    And user click submit button
+    Then new partner must create successfully
 
 deletePartner
     [Documentation]    Delete Partner
