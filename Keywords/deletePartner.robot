@@ -14,16 +14,16 @@ user delete partner
     Press Keys                          ${SEARCH_ELEMENT}    ${data.partnerName}
     ${COUNT_DELETE}      Get Element Count    ${DELETE_ICON_ELEMENT}
     FOR    ${element}    IN RANGE   ${COUNT_DELETE}
-        Continue For Loop If    '${element}' == '${COUNT}'
         Wait Until Element Is Visible       ${DELETE_ICON_ELEMENT}
+        Sleep    0.5
         Click Element                       ${DELETE_ICON_ELEMENT}
         Wait Until Element Is Visible       ${DELETE_BUTTON_ELEMENT}
+        Sleep    0.5
         Click Element                       ${DELETE_BUTTON_ELEMENT}
         Wait Until Element Is Visible       ${CONFIRMATION_ELEMENT}
         Click Element                       ${DELETE_PARTNER_BUTTON_ELEMENT}
         Sleep    4
     END
-    Debug
 
 that partner must remove from partner list
     Wait Until Element Is Not Visible    ${PARTNER_ELEMENT}

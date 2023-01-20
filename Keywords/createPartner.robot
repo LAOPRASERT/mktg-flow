@@ -8,8 +8,8 @@ Variables   ../Resources/testdata/createPartner.yml
 *** Keywords ***
 user click add new partner
     SelectPartner&Contract
-    Sleep    1
     Wait Until Element Is Visible   ${BUTTON_ADD_NEW_PARTNER}
+    Sleep    2
     Click Button                    ${BUTTON_ADD_NEW_PARTNER}
 
 user fill required data
@@ -31,6 +31,7 @@ user fill all data
     Input Text                      ${BILLING_ENTITY_ELEMENT}   ${billingEntity}
     Click Element                   ${OWNER_ELEMENT}
     Wait Until Element Is Visible   ${INPUT_OWNER}
+    Sleep    1
     Click Element                   ${INPUT_OWNER}
 
 user click submit button
@@ -40,19 +41,13 @@ user click submit button
 
 
 eror this field is required
-#Get Text
     ${ERROR_REQUIRED_FIELD_VALUE}       Get Text    ${REQUIRED_FIELD_TEXT}
-
-#Compair Text With Referent
     Should Be Equal    ${ERROR_REQUIRED_FIELD_VALUE}                ${data.errorRequired}     Custom error  values=True
 
 new partner must create successfully
-#Get Text
     Wait Until Element Is Visible                   ${PARTNER_NAME_TEXT}
     ${PARTNER_NAME_VALUE}               Get Text    ${PARTNER_NAME_TEXT}
     ${CATEGORY_VALUE}                   Get Text    ${CATEGORY_TEXT}
-
-#Compair Text With Referent
     Should Be Equal    ${PARTNER_NAME_VALUE}                ${partnerName}     Custom error  values=True
     Should Contain     ${CATEGORY_VALUE}                    ${category}        Custom error  values=True
 
