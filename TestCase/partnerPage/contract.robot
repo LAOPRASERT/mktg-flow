@@ -14,9 +14,7 @@ Library         DateTime
 Suite Setup     Given browser is opened to login page and login to the MKTGFLOW system
 Test Teardown   And user go to Home page
 Suite Teardown  And LogOutandCloseBrowser
-*** Variables ***
 
-@{List}=  0
 
 *** Test Cases ***
 
@@ -27,12 +25,3 @@ createNewContract
     And user fill all data
     And user click submit button
     Then new partner must create successfully
-
-
-#    FOR     ${nam1}    IN    @{List}
-#        ${numbers}=    Evaluate    random.sample(range(1, 6), 1)    random
-#        Log     ${nam1}
-#        Log To Console    ${numbers}
-#        Log To Console    ${data.category${numbers}}
-#    END
-#that contract must create on contract list

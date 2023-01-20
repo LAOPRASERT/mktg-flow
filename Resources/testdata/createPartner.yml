@@ -9,5 +9,6 @@ data:  {
         address: Thailand,
         billingEntity: _Corporation,
         owner: [Wuttipong Juntes (Sr. Sales Updated),Wuttipong Juntes (Job Title Test),Kritsada Laoprasert (superadmin@seedooh.com),
-                nutchapon hanouypornlert (PowerManBombay),Songkit Phachareon (Software Engineer),nutchapon han (Sale)]
+                nutchapon hanouypornlert (PowerManBombay),Songkit Phachareon (Software Engineer),nutchapon han (Sale)],
+        errorRequired: This field is required
 }

@@ -31,6 +31,11 @@ ${EMAIL_TEXT}
 ${BILLING_ENTITY_ELEMENT_TEXT}  //div[@class="sc-jJEJSO izNNUN" and //div[@class="ant-col ant-col-20 sc-iqHYGH ctduPu"]]
 ${REQUIRED_FIELD_TEXT}          //div[text()="This field is required"]
 
+#Value for compair
+${PARTNER_NAME_VALUE}
+${CATEGORY_VALUE}
+${ERROR_REQUIRED_FIELD_VALUE}
+# Variable for get data
 ${num}
 ${timeStamp}
 ${partnerName}
@@ -42,6 +47,9 @@ ${agency}
 ${address}
 ${billingEntity}
 ${owner}
+
+
+
 
 
 

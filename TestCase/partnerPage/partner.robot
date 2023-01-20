@@ -19,9 +19,16 @@ createNewPartnerByNonFillData
     [Tags]      ADD_PARTNER_NON_DATA
     When user click add new partner
     And user click submit button
+    Then eror this field is required
+
+createNewPartnerByFillRequiredDataOnly
+    [Documentation]    Create New Partner By Fill Required Data Only
+    [Tags]      ADD_PARTNER_REQUIRED_DATA
+    When user click add new partner
+    And user fill required data
+    And user click submit button
     Then new partner must create successfully
 
-createNewPartnerByFillRequiredData
 createNewPartnerByFillAllData
     [Documentation]    Create New Partner By Fill All Data
     [Tags]      ADD_PARTNER_FULL_DATA
@@ -36,17 +43,6 @@ deletePartner
     When user delete partner
     Then that partner must remove from partner list
 
-
-
-#deletePartner
-#    Given browser is opened to login page
-#
-#Scenario: user can sign in with valid credentials
-#    [Template]  User login template
-#
-#    # username        # password
-#    ${SUPER_ADMIN.USERNAME}    ${SUPER_ADMIN.PASSWORD}
-#    ${USER.USERNAME}     ${USER.PASSWORD}
 
 
 
