@@ -37,6 +37,15 @@ createNewPartnerByFillAllData
     And user click submit button
     Then new partner must create successfully
 
+createNewPartnerAddAnotherContract
+    [Documentation]    Create New Partner By Fill All Data and Add Another Contract
+    [Tags]      ADD_PARTNER_FULL_DATA_ADD_ANOTHER_CONTRACT
+    When user click add new partner
+    And user fill all data
+    And user select add another contract
+    And user click submit button
+    Then new partner must create successfully
+
 deletePartner
     [Documentation]    Delete Partner
     [Tags]      DELETE_PARTNER

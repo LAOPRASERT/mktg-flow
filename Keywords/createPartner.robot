@@ -34,6 +34,17 @@ user fill all data
     Sleep    1
     Click Element                   ${INPUT_OWNER}
 
+user select add another contract
+    get data for add another contract
+    Click Button                    ${ADD_ANOTHER_CONTRACT_BUTTON}
+    get add another contract element
+    Input Text                      ${CONTACT_NAME_ELEMENT}     ${contactName}
+    Input Text                      ${CONTACT_ROLE_ELEMENT}     ${contactRole}
+    Input Text                      ${EMAIL_ELEMENT}            ${email}
+    Input Text                      ${AGENCY_ELEMENT}           ${agency}
+    Input Text                      ${ADDRESS_ELEMENT}          ${address}
+    Sleep    1
+
 user click submit button
     Wait Until Element Is Visible   ${SUBMIT_BUTTON}
     Click Button                    ${SUBMIT_BUTTON}
@@ -96,5 +107,30 @@ get data for create partner
     Set Test Variable    ${AGENCY_TEXT}
     Set Test Variable    ${EMAIL_TEXT}
 
+get data for add another contract
+    ${num}=                     Evaluate        random.sample(range(1, 6), 1)    random
+    ${timeStamp}                Get Time        epoch
+    ${contactName}              Set Variable    ${data.contactName}${timeStamp}
+    ${contactRole}              Set Variable    ${data.contactRole${num}}
+    ${email}                    Set Variable    ${timeStamp}${data.email}
+    ${agency}                   Set Variable    ${data.agency}${timeStamp}
+    ${address}                  Set Variable    ${data.address}
 
+    Set Test Variable    ${contactName}
+    Set Test Variable    ${contactRole}
+    Set Test Variable    ${email}
+    Set Test Variable    ${agency}
+    Set Test Variable    ${address}
 
+get add another contract element
+    ${CONTACT_NAME_ELEMENT}     Set Variable   //*[@name="partner_contacts[1].name"]
+    ${CONTACT_ROLE_ELEMENT}     Set Variable   //*[@name="partner_contacts[1].role"]
+    ${EMAIL_ELEMENT}            Set Variable   //*[@name="partner_contacts[1].email"]
+    ${AGENCY_ELEMENT}           Set Variable   //*[@name="partner_contacts[1].agency"]
+    ${ADDRESS_ELEMENT}          Set Variable   //*[@name="partner_contacts[1].address"]
+
+    Set Test Variable           ${CONTACT_NAME_ELEMENT}
+    Set Test Variable           ${CONTACT_ROLE_ELEMENT}
+    Set Test Variable           ${EMAIL_ELEMENT}
+    Set Test Variable           ${AGENCY_ELEMENT}
+    Set Test Variable           ${ADDRESS_ELEMENT}
