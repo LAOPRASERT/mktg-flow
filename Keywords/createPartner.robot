@@ -87,25 +87,25 @@ get data for create partner
     ${EMAIL_TEXT}               Set Variable    //div[(text()="${email}") and //div[@class="ant-row sc-cxFLnm biUiTa"]]
 
 #Set Variable to test case
-    Set Test Variable    ${partnerName}
-    Set Test Variable    ${category}
-    Set Test Variable    ${contactName}
-    Set Test Variable    ${contactRole}
-    Set Test Variable    ${email}
-    Set Test Variable    ${agency}
-    Set Test Variable    ${address}
-    Set Test Variable    ${billingEntity}
-    Set Test Variable    ${owner}
-    Set Test Variable    ${INPUT_OWNER}
-    Set Test Variable    ${HEADER_TEXT}
-    Set Test Variable    ${PARTNER_NAME_TEXT}
-    Set Test Variable    ${CLIENT_CONTACT_TEXT}
-    Set Test Variable    ${CATEGORY_TEXT}
-    Set Test Variable    ${OWNER_TEXT}
-    Set Test Variable    ${CONTRACT_TEXT}
-    Set Test Variable    ${CONTRACT_ROLE_TEXT}
-    Set Test Variable    ${AGENCY_TEXT}
-    Set Test Variable    ${EMAIL_TEXT}
+    Set Test Variable           ${partnerName}
+    Set Test Variable           ${category}
+    Set Test Variable           ${contactName}
+    Set Test Variable           ${contactRole}
+    Set Test Variable           ${email}
+    Set Test Variable           ${agency}
+    Set Test Variable           ${address}
+    Set Test Variable           ${billingEntity}
+    Set Test Variable           ${owner}
+    Set Test Variable           ${INPUT_OWNER}
+    Set Test Variable           ${HEADER_TEXT}
+    Set Test Variable           ${PARTNER_NAME_TEXT}
+    Set Test Variable           ${CLIENT_CONTACT_TEXT}
+    Set Test Variable           ${CATEGORY_TEXT}
+    Set Test Variable           ${OWNER_TEXT}
+    Set Test Variable           ${CONTRACT_TEXT}
+    Set Test Variable           ${CONTRACT_ROLE_TEXT}
+    Set Test Variable           ${AGENCY_TEXT}
+    Set Test Variable           ${EMAIL_TEXT}
 
 get data for add another contract
     ${num}=                     Evaluate        random.sample(range(1, 6), 1)    random
@@ -116,11 +116,11 @@ get data for add another contract
     ${agency}                   Set Variable    ${data.agency}${timeStamp}
     ${address}                  Set Variable    ${data.address}
 
-    Set Test Variable    ${contactName}
-    Set Test Variable    ${contactRole}
-    Set Test Variable    ${email}
-    Set Test Variable    ${agency}
-    Set Test Variable    ${address}
+    Set Test Variable           ${contactName}
+    Set Test Variable           ${contactRole}
+    Set Test Variable           ${email}
+    Set Test Variable           ${agency}
+    Set Test Variable           ${address}
 
 get add another contract element
     ${CONTACT_NAME_ELEMENT}     Set Variable   //*[@name="partner_contacts[1].name"]
