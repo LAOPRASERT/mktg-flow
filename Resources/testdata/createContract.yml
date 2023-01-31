@@ -1,18 +1,10 @@
 #Input Data
-contractID:  {
-                AFL: T-01,
-                CRICKET: T-02,
-                VRC: T-03,
-                BASIC: T-04,
-                STANDARD: T-05,
-                TVT: T-06
+contract:  {
+                ID: [A-AFL-,A-CRICKET-,A-VRC-,A-BASIC-,A-STANDARD-,A-TVT-],
+                NAME: [Auto-AFL-,Auto-CRICKET-,Auto-VRC-,Auto-BASIC-,Auto-STANDARD-,Auto-TVT-],
+                FIXTURE: [AFL,CRICKET,VRC,BASIC,STANDARD,TVT],
+                errorRequired: This field is required,
+                MULTIPLE_ID:  A-MULTIPLE-,
+                MULTIPLE_NAME:  Auto-MULTIPLE-
 }
 
-contractName: {
-                AFL: True-AFL,
-                CRICKET: True-CRICKET,
-                VRC: True-VRC,
-                BASIC: True-BASIC,
-                STANDARD: True-STANDARD,
-                TVT: True-TVT
-}

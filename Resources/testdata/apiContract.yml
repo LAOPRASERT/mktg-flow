@@ -1,0 +1,3 @@
+API_URL:  https://develop.mktgflow.seedooh.com/
+API_GET_DATA: https://api.develop.mktgflow.seedooh.com/api/partner_contracts/?partner=203
+API_DELETE: https://api.develop.mktgflow.seedooh.com/api/partner_contracts/

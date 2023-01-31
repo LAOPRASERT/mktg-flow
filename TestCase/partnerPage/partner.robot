@@ -5,7 +5,6 @@ Resource        ../../Keywords/CommonFunctionality.robot
 Resource        ../../Keywords/SelectMenu.robot
 Resource        ../../Keywords/CreatePartner.robot
 Resource        ../../Keywords/deletePartner.robot
-Resource        ../../Keywords/createContract.robot
 Variables       ../../Resources/env/dev/config.yml
 
 # Setup Tearup Teardown
