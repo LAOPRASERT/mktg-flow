@@ -5,6 +5,12 @@ contract:  {
                 FIXTURE: [AFL,CRICKET,VRC,BASIC,STANDARD,TVT],
                 errorRequired: This field is required,
                 MULTIPLE_ID:  A-MULTIPLE-,
-                MULTIPLE_NAME:  Auto-MULTIPLE-
+                MULTIPLE_NAME:  Auto-MULTIPLE-,
+                MKTG_SIGNATORY: [Kritsada Laoprasertsuperadmin@seedooh.com,nutchapon hanouypornlertPowerManBombay,
+                       nutchapon hanSale,Songkit PhachareonSoftware Engineer,Wuttipong JuntesJob Title Test,
+                       Wuttipong JuntesSr. Sales Updated],
+                PARTNER_SIGNATORY:  Lee Jung Ki (CEO)
 }
+
+
 
