@@ -14,7 +14,7 @@ Test Teardown   And user go to Home page
 Suite Teardown  And LogOutandCloseBrowser
 
 *** Test Cases ***
-deleteContract
+1.deleteContract
     [Documentation]    Delete Contract
     [Tags]      DELETE_CONTRACT
     When user select partner
