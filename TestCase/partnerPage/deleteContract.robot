@@ -1,11 +1,9 @@
 *** Settings ***
 Documentation
 Library         Selenium2Library
-Resource        ../../Keywords/CommonFunctionality.robot
-Resource        ../../Keywords/SelectMenu.robot
-Resource        ../../Keywords/apiContract.robot
-Resource        ../../Keywords/deleteContract.robot
-Variables       ../../Resources/env/dev/config.yml
+Resource        ../../Keywords/Common/commonFunctionality.robot
+Resource        ../../Keywords/Contract/apiContract.robot
+Resource        ../../Keywords/Contract/deleteContract.robot
 
 # Setup Tearup Teardown
 Suite Setup     Given browser is opened to login page and login to the MKTGFLOW system

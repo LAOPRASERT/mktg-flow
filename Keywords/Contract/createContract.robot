@@ -1,16 +1,12 @@
 *** Settings ***
 Library     Selenium2Library
 Library     Debugger
-Library     RequestsLibrary
-Library     Collections
-Library     JSONLibrary
-Resource    SelectMenu.robot
-Resource    ../Resources/page/deletePartner.robot
-Resource    ../Resources/page/createContract.robot
-Variables   ../Resources/testdata/createPartner.yml
-Variables   ../Resources/testdata/createContract.yml
+Resource    ../Common/selectMenu.robot
+Resource    ../../Resources/page/partnerAndContract/deletePartner.robot
+Resource    ../../Resources/page/partnerAndContract/createContract.robot
+Variables   ../../Resources/testdata/createContract.yml
 
-*** Keywords ***
+*** Keywords *
 user click add new contract
     SelectPartner&Contract
     Wait Until Element Is Visible       ${SEARCH_ELEMENT}

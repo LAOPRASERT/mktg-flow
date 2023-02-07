@@ -1,6 +1,6 @@
 *** Settings ***
 Library     Selenium2Library
-Variables   ../testdata/apiContract.yml
+Variables   ../../testdata/apiContract.yml
 
 *** Variables ***
 @{ID_LIST}

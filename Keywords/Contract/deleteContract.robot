@@ -1,11 +1,8 @@
 *** Settings ***
 Library     Selenium2Library
 Library     Debugger
-Resource    SelectMenu.robot
-Resource    ../Resources/page/deleteContract.robot
-Resource    ../Resources/page/createContract.robot
-Variables   ../Resources/testdata/createPartner.yml
-Variables   ../Resources/testdata/createContract.yml
+Resource    ../Common/selectMenu.robot
+Resource    ../../Resources/page/partnerAndContract/deleteContract.robot
 
 *** Keywords ***
 user select partner

@@ -1,9 +1,9 @@
 *** Settings ***
 Library     Selenium2Library
 Library     Debugger
-Resource    SelectMenu.robot
-Resource    ../Resources/page/createPartner.robot
-Variables   ../Resources/testdata/createPartner.yml
+Resource    ../Common/selectMenu.robot
+Resource    ../../Resources/page/partnerAndContract/createPartner.robot
+Variables   ../../Resources/testdata/createPartner.yml
 
 *** Keywords ***
 user click add new partner

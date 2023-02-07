@@ -1,6 +1,6 @@
 *** Settings ***
 Library     Selenium2Library
-Resource    ../Resources/page/Menu.robot
+Resource    ../../Resources/page/common/Menu.robot
 
 *** Keywords ***
 SelectPartner&Contract

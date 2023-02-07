@@ -1,7 +1,7 @@
 *** Settings ***
 Library     Selenium2Library
-Variables   ../testdata/createPartner.yml
-Variables   ../testdata/createContract.yml
+Variables   ../../testdata/createPartner.yml
+Variables   ../../testdata/createContract.yml
 
 *** Variables ***
 #Aray list sport type

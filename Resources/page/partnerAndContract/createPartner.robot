@@ -1,6 +1,6 @@
 *** Settings ***
 Library     Selenium2Library
-Variables   ../testdata/createPartner.yml
+Variables   ../../testdata/createPartner.yml
 
 *** Variables ***
 

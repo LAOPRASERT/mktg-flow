@@ -4,8 +4,8 @@ Library     Debugger
 Library     RequestsLibrary
 Library     Collections
 Library     JSONLibrary
-Variables   ../Resources/testdata/apiContract.yml
-Resource    ../Resources/page/apiContract.robot
+Variables   ../../Resources/testdata/apiContract.yml
+Resource    ../../Resources/page/partnerAndContract/apiContract.robot
 
 *** Keywords ***
 delete contract
