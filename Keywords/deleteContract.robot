@@ -22,6 +22,7 @@ user is delete contract
     FOR    ${num}    IN RANGE   ${COUNT_DELETE}
         Wait Until Element Is Visible       ${ICON_DELETE_CONTRACT_ELEMENT}
         Click Element                       ${ICON_DELETE_CONTRACT_ELEMENT}
+        Wait Until Element Is Visible       ${DELETE_CONTRACT_ELEMENT}
         Click Element                       ${DELETE_CONTRACT_ELEMENT}
         Wait Until Element Is Visible       ${DELETE_BUTTON_ELEMENT}
         Click Button                        ${DELETE_BUTTON_ELEMENT}
