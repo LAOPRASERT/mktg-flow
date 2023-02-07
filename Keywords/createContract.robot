@@ -119,6 +119,7 @@ user create new contract multiple partner signatory
     Sleep    1
     Click Element                       ${SELECT_PARTNER_SIGNATORY_ELEMENT}
     Click Element                       ${PARTNER_SIGNATORY}
+
 eror this field is required
     ${ERROR_REQUIRED_FIELD_VALUE}       Get Text    ${REQUIRED_FIELD_TEXT}
     Should Be Equal    ${ERROR_REQUIRED_FIELD_VALUE}                ${contract.errorRequired}     Custom error  values=True
@@ -185,6 +186,7 @@ get data for create contract
     ${CHECK_CONTRACT_NAME_ELEMENT}      Set Variable    //div[text()="${CONTRACT_NAME}"]
     ${MKTG_SIGNATORY}                   Set Variable    ${SELECTOR_MKTG_SIGNATORY_ELEMENT}${contract.MKTG_SIGNATORY${num}}"]
     ${PARTNER_SIGNATORY}                Set Variable    ${SELECTOR_PARTNER_SIGNATORY_ELEMENT}${contract.PARTNER_SIGNATORY}"]
+
 
     Set Test Variable           ${CONTRACT_ID}
     Set Test Variable           ${CONTRACT_NAME}

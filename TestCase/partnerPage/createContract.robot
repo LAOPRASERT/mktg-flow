@@ -6,9 +6,9 @@ Resource        ../../Keywords/SelectMenu.robot
 Resource        ../../Keywords/deletePartner.robot
 Resource        ../../Keywords/createContract.robot
 Resource        ../../Keywords/apiContract.robot
+Resource        ../../Keywords/deleteContract.robot
 Variables       ../../Resources/env/dev/config.yml
 Variables       ../../Resources/testdata/createPartner.yml
-Library         DateTime
 
 # Setup Tearup Teardown
 Suite Setup     Given browser is opened to login page and login to the MKTGFLOW system
