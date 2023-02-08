@@ -2,12 +2,7 @@ API_URL:  https://develop.mktgflow.seedooh.com/
 API_GET_DATA: https://api.develop.mktgflow.seedooh.com/api/partner_contracts/?partner=203
 API_DELETE: https://api.develop.mktgflow.seedooh.com/api/partner_contracts/
 API_CREATE: https://api.develop.mktgflow.seedooh.com/api/partner_contracts/
-
-DATA:  {
-                    ID: [Auto_1,Auto_2,Auto_3],
-                    NAME: null,
-                    FIXTURE: [117,118,119],
-                    ORDER_NUMBER: [0,0],
-                    ID_NUMBER: [11,304],
-                    PARTNER: 203
-}
+API_AUTHORIZATION: Token 4a449adf23fc558b3ad50168815f38504967379b
+API_PARTNER_CREATE: https://api.develop.mktgflow.seedooh.com/api/partners/
+API_PARTNER_DELETE: https://api.develop.mktgflow.seedooh.com/api/partners/
+API_CONTENT:  application/json

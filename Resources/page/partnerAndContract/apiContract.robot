@@ -1,6 +1,5 @@
 *** Settings ***
 Library     Selenium2Library
-Variables   ../../testdata/apiContract.yml
 
 *** Variables ***
 @{ID_LIST}
@@ -14,6 +13,8 @@ ${FIXTURE}          fixtures
 ${CONTRACT_NAME}    contract_name
 ${USER_SIGN}        contract_user_signatory
 ${PARTNER_SIGN}     contract_partner_signatory
+${AUTHORIZATION}    Authorization
+${CONTENT_TYPE}     Content-Type
 ${num}
 @{FIXTURE_LIST}
 @{USER_LIST}
@@ -23,3 +24,4 @@ ${num}
 &{PARTNER_DIC}
 &{HEADER}
 ${RESPONSE}
+${STATUS_CODE}

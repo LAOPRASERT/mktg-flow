@@ -11,14 +11,14 @@ Test Teardown   And user go to Home page
 Suite Teardown  And LogOutandCloseBrowser
 
 *** Test Cases ***
-createNewPartnerByNonFillData
+1.createNewPartnerByNonFillData
     [Documentation]    Create New Partner By Non Fill Data
     [Tags]      ADD_PARTNER_NON_DATA
     When user click add new partner
     And user click submit button
     Then eror this field is required
 
-createNewPartnerByFillRequiredDataOnly
+2.createNewPartnerByFillRequiredDataOnly
     [Documentation]    Create New Partner By Fill Required Data Only
     [Tags]      ADD_PARTNER_REQUIRED_DATA
     When user click add new partner
@@ -26,7 +26,7 @@ createNewPartnerByFillRequiredDataOnly
     And user click submit button
     Then new partner must create successfully
 
-createNewPartnerByFillAllData
+3.createNewPartnerByFillAllData
     [Documentation]    Create New Partner By Fill All Data
     [Tags]      ADD_PARTNER_FULL_DATA
     When user click add new partner
@@ -34,7 +34,7 @@ createNewPartnerByFillAllData
     And user click submit button
     Then new partner must create successfully
 
-createNewPartnerAddAnotherContract
+4.createNewPartnerAddAnotherContract
     [Documentation]    Create New Partner By Fill All Data and Add Another Contract
     [Tags]      ADD_PARTNER_FULL_DATA_ADD_ANOTHER_CONTRACT
     When user click add new partner
