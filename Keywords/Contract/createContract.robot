@@ -59,6 +59,7 @@ user create new contract for all sport type
         Sleep    0.5
         Press Keys                          ${INPUT_CONTRACT_NAME_ELEMENT}              ${contract.NAME[${index}]}${timeStamp}
         Click Element                       ${SELECT_FIXTURE_ELEMENT}
+        Sleep    0.5
         Click Element                       ${FIXTURE_NAME_${contract.FIXTURE[${index}]}_ELEMENT}
         Sleep    0.5
         Click Element                       ${CONFIRM_ADD_NEW_CONTRACT_ELEMENT}

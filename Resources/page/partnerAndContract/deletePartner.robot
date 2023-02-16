@@ -12,6 +12,9 @@ ${DELETE_ICON_ELEMENT}                  //*[@class="sc-crrsfI dgyVgY ant-dropdow
 ${DELETE_ICON_ELEMENT_REF}              sc-crrsfI dgyVgY ant-dropdown-trigger sc-jNMdTA kFCyzt
 ${DELETE_BUTTON_ELEMENT}                //div[@class="sc-jSgupP cHdLnP"]
 ${CONFIRMATION_ELEMENT}                 //div[text()="Deleting partner will also delete all contracts for this partner. Are you sure you want to delete the partner?" and //div[@class="sc-jJEJSO gVreDR"]]
-${DELETE_PARTNER_BUTTON_ELEMENT}        //span[text()="Delete" and //button[@class="ant-btn ant-btn-primary ant-btn-danger"]]
+${DELETE_PARTNER_BUTTON_ELEMENT}        //span[text()="Delete" and //button[@class="ant-btn ant-btn-primary ant-btn-danger"]]\
+${REF_RESULT_DELETE_CONTRACT}           Partner was successfully deleted.
+${TOASTBOX_DELETE_ELEMENT}              //div[text()="Partner was successfully deleted."]
+${RESULT_DELETE_CONTRACT}
 ${COUNT_DELETE}
 

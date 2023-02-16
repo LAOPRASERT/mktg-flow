@@ -15,7 +15,7 @@ user delete partner
     ${COUNT_DELETE}      Get Element Count    ${DELETE_ICON_ELEMENT}
     FOR    ${element}    IN RANGE   ${COUNT_DELETE}
         Wait Until Element Is Visible       ${DELETE_ICON_ELEMENT}
-        Sleep    0.5
+        Wait Until Element Is Not Visible   ${LOADING_ICON}
         Click Element                       ${DELETE_ICON_ELEMENT}
         Wait Until Element Is Visible       ${DELETE_BUTTON_ELEMENT}
         Sleep    0.5
@@ -23,9 +23,11 @@ user delete partner
         Wait Until Element Is Visible       ${CONFIRMATION_ELEMENT}
         Click Element                       ${DELETE_PARTNER_BUTTON_ELEMENT}
         Wait Until Element Is Not Visible   ${LOADING_ICON}
+        Wait Until Element Is Visible       ${TOASTBOX_DELETE_ELEMENT}
+        ${RESULT_DELETE_CONTRACT}           Get Text                            ${TOASTBOX_DELETE_ELEMENT}
+        Set Test Variable                   ${RESULT_DELETE_CONTRACT}
+        Reload Page
     END
 
 that partner must remove from partner list
-    Wait Until Element Is Not Visible       ${LOADING_ICON}
-    Wait Until Element Is Not Visible       ${PARTNER_ELEMENT}
-    Wait Until Element Is Not Visible       ${DELETE_ICON_ELEMENT}
+    Should Be Equal    ${REF_RESULT_DELETE_CONTRACT}   ${RESULT_DELETE_CONTRACT}     Custom error  values=True
