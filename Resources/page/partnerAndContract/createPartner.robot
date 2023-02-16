@@ -18,6 +18,7 @@ ${OWNER_ELEMENT}                    //*[@class="sc-jSgupP ksJFgj"]
 ${INPUT_OWNER}
 ${SUBMIT_BUTTON}                    //button[@type ="submit" and //span[.="Submit"]]
 ${ADD_ANOTHER_CONTRACT_BUTTON}      //button[text()="Add Another Contact"]
+${LOADING_ICON}                     //img[@src="/static/media/loading.95be6e88.gif"]
 
 #Element Get Text For Check Create New Partner
 ${HEADER_TEXT}

@@ -1,6 +1,9 @@
 *** Settings ***
 Library     Selenium2Library
 Library     Debugger
+Library     DatabaseLibrary
+Library     OperatingSystem
+Resource    dataBase.robot
 Resource    ../Common/selectMenu.robot
 Resource    ../../Resources/page/partnerAndContract/createPartner.robot
 Variables   ../../Resources/testdata/createPartner.yml
@@ -8,9 +11,9 @@ Variables   ../../Resources/testdata/createPartner.yml
 *** Keywords ***
 user click add new partner
     SelectPartner&Contract
-    Wait Until Element Is Visible   ${BUTTON_ADD_NEW_PARTNER}
-    Sleep    2
-    Click Button                    ${BUTTON_ADD_NEW_PARTNER}
+    Wait Until Element Is Visible           ${BUTTON_ADD_NEW_PARTNER}
+    Wait Until Element Is Not Visible       ${LOADING_ICON}
+    Click Button                            ${BUTTON_ADD_NEW_PARTNER}
 
 user fill required data
     get data for create partner
@@ -134,3 +137,4 @@ get add another contract element
     Set Test Variable           ${EMAIL_ELEMENT}
     Set Test Variable           ${AGENCY_ELEMENT}
     Set Test Variable           ${ADDRESS_ELEMENT}
+

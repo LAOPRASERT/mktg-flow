@@ -1,18 +1,22 @@
 *** Settings ***
 Library    Selenium2Library
-Library    Debugger
+Library    DatabaseLibrary
+Library    OperatingSystem
 Resource   ../../Resources/page/common/login.robot
 Variables  ../../Resources/env/dev/config.yml
+Variables  ../../Resources/testdata/dataBase.yml
 
 
 
 *** Keywords ***
 browser is opened to login page and login to the MKTGFLOW system
+    Connect To Database     pymysql     ${CONFIG.DB_NAME}   ${CONFIG.DB_USER}  ${CONFIG.DB_PASS}    ${CONFIG.DB_HOST}   ${CONFIG.DB_PORT}
     OPEN BROWSER   ${URL}       ${BROWSER}
     Maximize Browser Window
     login to the MKTGFLOW system
 
 LogOutandCloseBrowser
+    Disconnect From Database
     Close Browser
 
 login to the MKTGFLOW system

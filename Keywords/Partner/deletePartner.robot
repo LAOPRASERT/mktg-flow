@@ -3,6 +3,7 @@ Library     Selenium2Library
 Library     Debugger
 Resource    ../Common/selectMenu.robot
 Resource    ../../Resources/page/partnerAndContract/deletePartner.robot
+Resource    ../../Resources/page/partnerAndContract/createPartner.robot
 Variables   ../../Resources/testdata/createPartner.yml
 
 *** Keywords ***
@@ -21,9 +22,10 @@ user delete partner
         Click Element                       ${DELETE_BUTTON_ELEMENT}
         Wait Until Element Is Visible       ${CONFIRMATION_ELEMENT}
         Click Element                       ${DELETE_PARTNER_BUTTON_ELEMENT}
-        Sleep    4
+        Wait Until Element Is Not Visible   ${LOADING_ICON}
     END
 
 that partner must remove from partner list
-    Wait Until Element Is Not Visible    ${PARTNER_ELEMENT}
-    Wait Until Element Is Not Visible    ${DELETE_ICON_ELEMENT}
+    Wait Until Element Is Not Visible       ${LOADING_ICON}
+    Wait Until Element Is Not Visible       ${PARTNER_ELEMENT}
+    Wait Until Element Is Not Visible       ${DELETE_ICON_ELEMENT}

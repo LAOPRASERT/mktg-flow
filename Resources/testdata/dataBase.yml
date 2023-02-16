@@ -1,0 +1,7 @@
+CONFIG: {
+          DB_NAME:  mktg,
+          DB_USER:  root,
+          DB_PASS:  1SangSom!,
+          DB_HOST:  mktg-develop-cluster.cluster-ckz2vtm9gyug.ap-southeast-2.rds.amazonaws.com,
+          DB_PORT:  3306
+}

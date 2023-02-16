@@ -3,10 +3,11 @@ Documentation
 Library         Selenium2Library
 Resource        ../../Keywords/Common/commonFunctionality.robot
 Resource        ../../Keywords/Partner/createPartner.robot
-Resource        ../../Keywords/Partner/deletePartner.robot
+Resource        ../../Keywords/Partner/dataBase.robot
 
 # Setup Tearup Teardown
 Suite Setup     Given browser is opened to login page and login to the MKTGFLOW system
+Test Setup      And connect database for delete partner
 Test Teardown   And user go to Home page
 Suite Teardown  And LogOutandCloseBrowser
 
@@ -43,11 +44,7 @@ Suite Teardown  And LogOutandCloseBrowser
     And user click submit button
     Then new partner must create successfully
 
-deletePartner
-    [Documentation]    Delete Partner
-    [Tags]      DELETE_PARTNER
-    When user delete partner
-    Then that partner must remove from partner list
+
 
 
 
