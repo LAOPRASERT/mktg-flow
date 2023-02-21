@@ -7,7 +7,7 @@ Resource        ../../Keywords/Contract/deleteContract.robot
 
 # Setup Tearup Teardown
 Suite Setup     Given browser is opened to login page and login to the MKTGFLOW system
-Test Setup      And create contract
+Test Setup      And api create contract
 Test Teardown   And user go to Home page
 Suite Teardown  And LogOutandCloseBrowser
 

@@ -3,7 +3,7 @@ Documentation
 Library         Selenium2Library
 Resource        ../../Keywords/Common/commonFunctionality.robot
 Resource        ../../Keywords/Partner/createPartner.robot
-Resource        ../../Keywords/Partner/dataBase.robot
+Resource        ../../Keywords/Common/dataBase.robot
 
 # Setup Tearup Teardown
 Suite Setup     Given browser is opened to login page and login to the MKTGFLOW system

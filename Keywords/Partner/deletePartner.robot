@@ -18,7 +18,6 @@ user delete partner
         Wait Until Element Is Not Visible   ${LOADING_ICON}
         Click Element                       ${DELETE_ICON_ELEMENT}
         Wait Until Element Is Visible       ${DELETE_BUTTON_ELEMENT}
-        Sleep    0.5
         Click Element                       ${DELETE_BUTTON_ELEMENT}
         Wait Until Element Is Visible       ${CONFIRMATION_ELEMENT}
         Click Element                       ${DELETE_PARTNER_BUTTON_ELEMENT}

@@ -3,7 +3,7 @@ Library     Selenium2Library
 Library     Debugger
 Library     DatabaseLibrary
 Library     OperatingSystem
-Resource    dataBase.robot
+Resource    ../Common/dataBase.robot
 Resource    ../Common/selectMenu.robot
 Resource    ../../Resources/page/partnerAndContract/createPartner.robot
 Variables   ../../Resources/testdata/createPartner.yml

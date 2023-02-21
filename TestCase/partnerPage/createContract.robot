@@ -4,10 +4,11 @@ Library         Selenium2Library
 Resource        ../../Keywords/Common/commonFunctionality.robot
 Resource        ../../Keywords/Contract/createContract.robot
 Resource        ../../Keywords/Contract/apiContract.robot
+Resource        ../../Keywords/Common/dataBase.robot
 
 # Setup Tearup Teardown
 Suite Setup     Given browser is opened to login page and login to the MKTGFLOW system
-Test Setup      And delete contract
+Test Setup      And connect database for delete contract
 Test Teardown   And user go to Home page
 Suite Teardown  And LogOutandCloseBrowser
 
